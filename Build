@@ -1,5 +1,5 @@
 sudo docker build -t loadbalance .
-sudo docker tag balance ikechucool4real/nginxloadbalance
+sudo docker tag loadbalance ikechucool4real/nginxloadbalance
 sudo docker push ikechucool4real/nginxloadbalance
 sudo docker stop loadbalance
 sudo docker rm loadbalance
