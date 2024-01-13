@@ -8,5 +8,5 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY global.conf /etc/nginx/conf.d/default.conf
 # Copy upstream.conf for upstream server configurations
 COPY upstream.conf /etc/nginx/conf.d/upstream.conf
+CMD ["nginx", "-g"]
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
