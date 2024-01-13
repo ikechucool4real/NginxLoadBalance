@@ -1,0 +1,5 @@
+sudo docker build -t ikechucool/nginxloadbalance .
+sudo docker push ikechucool/nginxloadbalance
+sudo docker stop balance
+sudo docker rm balance
+sudo docker run -d -p 80:80 --name balance  acobley/nginxloadbalance
