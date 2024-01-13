@@ -1,5 +1,6 @@
 FROM nginx
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY upstream.conf /etc/nginx/conf.d/upstream.conf
+ADD global.conf /etc/nginx/conf.d/
+ADD nginx.conf /etc/nginx/nginx.conf
+ADD upstream.conf /etc/nginx/upstream.conf
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
